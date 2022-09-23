@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="logo-section">
+        <img src="/images/logo.svg" alt="" class="logo-img" />
+      </header>
+      <main class="hero">
+        <img src="/images/illustration-mockups.svg" alt="" class="hero-img" />
+        <div class="hero-info">
+          <h1 class="title">Build The Community Your Fans Will Love</h1>
+          <p class="description">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="btn">Register</button>
+        </div>
+      </main>
+      <section class="social-media">
+        <span class="social-media-icons"
+          ><ion-icon name="logo-facebook" class="icons"></ion-icon
+        ></span>
+        <span class="social-media-icons"
+          ><ion-icon name="logo-twitter" class="icons"></ion-icon
+        ></span>
+        <span class="social-media-icons"
+          ><ion-icon name="logo-instagram" class="icons"></ion-icon
+        ></span>
+      </section>
+      <!-- FORM-MODAL -->
+      <div class="register-modal hidden">
+        <div class="form-img">
+          <img src="/images/logo.svg" alt="" class="form-logo" />
+        </div>
+        <form action="" class="form">
+          <div class="form-register">
+            <label for="name">Name </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="user-info"
+              required
+            />
+          </div>
+          <div class="form-registration">
+            <label for="email">Email </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="user-info"
+              required
+            />
+          </div>
+          <div class="form-registration">
+            <label for="date">Date of Birth </label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              class="user-info"
+              required
+            />
+          </div>
+          <div class="form-registration btn-section">
+            <input type="submit" value="Register" class="btn-form" />
+          </div>
+        </form>
+      </div>
+      <!-- FORM-MODAL -->
+    </div>
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+    <!-- overlay -->
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Hugo Marroquin</a>.
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
